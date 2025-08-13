@@ -18,6 +18,8 @@ public class Unidad2Tp_consigna2 {
         // Creamos el objeto Scanner para poder leer posteriormente las entrasdas del usuario
         Scanner input = new Scanner(System.in);
         
+        // Imprimimos mensaje previo para indicar al usuario que es lo que hará el programa y solicitarle los números a ingresar
+
         System.out.println("Este programa evaluará cuál número es mayor. Deberás ingresar tres números enteros.");
         System.out.println("Ingresá un primer número: ");
         
