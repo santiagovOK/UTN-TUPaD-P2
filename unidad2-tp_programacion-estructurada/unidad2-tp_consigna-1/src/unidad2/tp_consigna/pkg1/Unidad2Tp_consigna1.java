@@ -7,7 +7,7 @@ package unidad2.tp_consigna.pkg1;
 import java.util.Scanner;
 /**
  *
- * @author san
+ * @author Santiago Octavio Varela / @santiagovOK (GitHub) <santiago.varela@tupad.utn.edu.ar>
  */
 public class Unidad2Tp_consigna1 {
 
