@@ -5,8 +5,8 @@
 ## ✨ Estudiante
 
 - **Nombre:** Varela, Santiago Octavio
-- **Comisión:**Ag25-2C 14
-- **Email institucional:**santiago.varela@tupad.utn.edu.ar  
+- **Comisión:** Ag25-2C 14
+- **Email institucional:** santiago.varela@tupad.utn.edu.ar  
 
 ## 📂 Descripción del Repositorio
 
