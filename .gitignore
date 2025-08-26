@@ -1,16 +1,104 @@
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-1/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-1/build/
-/unidad2-tp_programacion-estructurada/Unidad2Tp_consigna3/nbproject/private/
-/unidad2-tp_programacion-estructurada/Unidad2Tp_consigna4/nbproject/private/
-/unidad2-tp_programacion-estructurada/Unidad2Tp_consigna5/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-8/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-9/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-9/build/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-10/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-10/build/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-11/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-11/build/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-12/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-12/build/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-13/nbproject/private/
-/unidad2-tp_programacion-estructurada/unidad2-tp_consigna-13/build/
+#  1.  Archivos y carpetas generados por la compilación de Java
+# -------------------------------------------------------------
+# Los archivos *.class son el byte‑code resultante de javac.
+# No deben versionarse porque pueden regenerarse en cualquier
+# momento a partir del código fuente (*.java).
+*.class
+
+# El directorio donde típicamente se colocan los artefactos compilados.
+# En proyectos Maven/Gradle suele ser “target” o “build”.
+/target/
+/build/
+
+# JAR, WAR, EAR y otros paquetes binarios que se crean al empaquetar.
+*.jar
+*.war
+*.ear
+
+# Los archivos de salida de la herramienta de documentación Javadoc.
+/docs/
+/javadoc/
+
+# -------------------------------------------------------------
+#  2.  Archivos de dependencias y cachés locales
+# -------------------------------------------------------------
+# Maven guarda el repositorio local en ~/.m2; no es parte del repo.
+# (No se necesita ignorarlo aquí, pero se incluye por si se crea
+# una carpeta “.m2” dentro del proyecto por accidente.)
+.m2/
+
+# Gradle crea una carpeta .gradle con su caché y archivos temporales.
+.gradle/
+# El wrapper descarga el binario en “gradle/wrapper”.
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+
+
+#  3.  IDEs / Editores de código más habituales
+# ---- IntelliJ IDEA ------------------------------------------------
+# Configuraciones del proyecto que son específicas de la máquina local.
+.idea/
+*.iws
+*.iml
+*.ipr
+# Carpeta de salida del compilador de IDEA (si la cambias de “out” a otra).
+out/
+
+# ---- Eclipse -------------------------------------------------------
+# Metadatos del proyecto Eclipse y de la configuración del
+# compilador/entorno.
+.project
+.classpath
+.settings/
+# La carpeta “bin/” que Eclipse crea para los .class compilados.
+bin/
+
+# ---- NetBeans ------------------------------------------------------
+# Archivos de proyecto propios de NetBeans.
+nbproject/private/
+build/
+nbbuild/
+dist/
+.nb-gradle/
+
+# ---- VS Code --------------------------------------------------------
+# Configuraciones de workspace y carpetas de depuración.
+.vscode/
+# Si usas la extensión “Java Extension Pack”, también crea
+# una carpeta “.classpath” y “.project” (ya cubiertas arriba), y
+# una carpeta “.settings”.
+# Además, los archivos de depuración temporales:
+launch.json
+tasks.json
+
+# -------------------------------------------------------------
+#  5.  Archivos de logs y temporales
+# -------------------------------------------------------------
+# Salida de consola, logs de la aplicación o del servidor.
+*.log
+logs/
+# Archivos de depuración generados por la JVM (heap dumps, etc.).
+*.hprof
+hs_err_pid*.log
+
+
+# Linux – archivos temporales de escritorio.
+*~ 
+# Archivos de bloqueo de editor (Vim, Emacs, etc.).
+*.swp
+*.swo
+*~
+
+# -------------------------------------------------------------
+#  4.  Otros artefactos que pueden aparecer en proyectos Java
+# -------------------------------------------------------------
+# Paquetes de distribución creados con “jlink” o “jpackage”.
+jpackage/
+jlink/
+# Archivos generados por herramientas de análisis estático (SpotBugs,
+# Checkstyle, PMD, etc.) si se guardan localmente.
+/spotbugs/
+/sonar/
+# Reportes de pruebas unitarias en formato HTML/JSON.
+surefire-reports/
+jacoco.exec
