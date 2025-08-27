@@ -9,23 +9,7 @@ package unidad3Tp3Ejercicio5;
  * @author Santiago Octavio Varela / @santiagovOK (GitHub)
  * <santiago.varela@tupad.utn.edu.ar>
  */
-/**
- * Clase que modela una nave espacial.
- * Atributos:
- *   - nombre: identificador de la nave.
- *   - combustible: cantidad actual de combustible (unidades).
- *
- * Metodos:
- *   - despegar(): indica que la nave ha iniciado el despegue.
- *   - avanzar(double distancia): consume combustible proporcional a la distancia.
- *   - recargarCombustible(double cantidad): aumenta el combustible sin superar el limite maximo.
- *   - mostrarEstado(): imprime en consola el nombre y el combustible restante.
- *
- * Reglas:
- *   - Cada unidad de distancia consume 1 unidad de combustible (establecido por mi).
- *   - No se permite avanzar si no hay suficiente combustible.
- *   - El combustible maximo es 50 unidades.
- */
+
 public class NaveEspacial {
 
     // Construimos el estado interno o "private" de NaveEspacial
@@ -33,7 +17,7 @@ public class NaveEspacial {
     private double combustible;          // Variable para combustible actual en unidades (decimal)
 
     // Combustible maximo como variable constante global
-    private static final double MAX_COMBUSTIBLE = 50.0;
+    private static final double MAX_COMBUSTIBLE = 100.0;
 
     // Setters Necesarios
     
@@ -60,7 +44,8 @@ public class NaveEspacial {
         System.out.println(nombre + " esta despegando...");
     }
 
-    // Avanza la nave una distancia especificada con avanzar(distancia). Cada unidad de distancia consume 1 unidad de combustible.
+    // Avanza la nave una distancia especificada con avanzar(distancia). 
+    // Cada unidad de distancia consume una unidad de combustible. La relacion es 1:1
 
     public void avanzar(double distancia) {
         if (distancia <= 0) {
@@ -100,9 +85,8 @@ public class NaveEspacial {
 
     
     public void mostrarEstado() {
-        System.out.println("=== Estado de la Nave ===");
-        System.out.println("Nombre       : " + nombre);
-        System.out.println("Combustible  : " + combustible + " / " + MAX_COMBUSTIBLE);
-        System.out.println("=========================\n");
+        System.out.println("\nEstado de la Nave\n");
+        System.out.println("Nombre: " + nombre + "\n");
+        System.out.println("Combustible  : " + combustible + " / " + MAX_COMBUSTIBLE + "\n");
     }
 }
