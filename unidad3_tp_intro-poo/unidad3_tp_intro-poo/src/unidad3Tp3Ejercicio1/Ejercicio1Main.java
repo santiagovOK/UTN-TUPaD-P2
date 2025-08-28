@@ -17,16 +17,17 @@ public class Ejercicio1Main {
     public static void main(String[] args) {
         Estudiante est1 = new Estudiante();
         
+        System.out.println("- Información inicial del estudiante -\n");
         est1.mostrarInfo();
         
         // Subimos la calificación con  subirCalificacion()
         est1.subirCalificacion(1.1);  
-        System.out.println("\nDespués de subir 1.1 puntos:");
+        System.out.println("\n- Después de subir 1.1 puntos - ");
         est1.mostrarInfo();
 
         // Bajamos la calificación con  bajarCalificacion()
         est1.bajarCalificacion(3.0);  
-        System.out.println("\nDespués de bajar 3.0 puntos:");
+        System.out.println("\n- Después de bajar 3.0 puntos -");
         est1.mostrarInfo();
     }
     

@@ -17,9 +17,9 @@ public class Mascota {
     private String especie = "Perro";         // Variable la especie de la mascota
     private int edad = 9;                     // Variable para almacenar la edad de la mascota
     
-    // Método para mostrar información - debe estar DENTRO de la clase
+    // Método para mostrar información
     public void mostrarInfo() {
-        System.out.println("\nInformacion de la mascota: \n");
+        System.out.println("\nInformación de la mascota: \n");
         System.out.println("Nombre: " + nombre + "\nEspecie: " + especie);
         System.out.println("\nEdad: " + edad);
     }
@@ -28,9 +28,9 @@ public class Mascota {
         
         if (aniosTranscurridos < 0) {                        // Caso para evitar puntos negativos
             System.out.println("Error: los años a cumplir deben ser positivos");
-            return;                              // Salimos del m�todo sin retornar valor
+            return;                              // Salimos del método sin retornar valor
         } else {
-            edad += aniosTranscurridos;              // Sumamos puntos a la calificaci�n
+            edad += aniosTranscurridos;              // Sumamos puntos a la calificación
         }
              
     }
