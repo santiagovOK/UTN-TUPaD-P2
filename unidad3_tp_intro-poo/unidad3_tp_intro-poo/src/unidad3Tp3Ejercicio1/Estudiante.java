@@ -25,7 +25,7 @@ public class Estudiante {
         System.out.println("\nCalificación: " + calificacion);
     }
     
-    // Metodo para incrementar la calificacion
+    // Metodo para incrementar la calificación
     public void subirCalificacion(double puntos) {
         if (puntos < 0) {                        // Caso para evitar puntos negativos
             System.out.println("Error: los puntos a subir deben ser positivos");
@@ -39,7 +39,7 @@ public class Estudiante {
              
     }
 
-    // Metodo para bajar la calificaci�n
+    // Metodo para bajar la calificación
     public void bajarCalificacion(double puntos) {
         if (puntos < 0) {                           // Validación de puntos negativos
             System.out.println("Error: los puntos a bajar deben ser positivos");
