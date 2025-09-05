@@ -27,31 +27,31 @@ public class Unidad4_tp_poo_main {
         // Empleado 3: usando el constructor sobrecargado (nombre y puesto, 2 parámetros)
         Empleados emp3 = new Empleados("Santiago Varela", "Desarrollador de Software");
 
-        // Aplcamos los métodos actualizarSalario() sobre distintos empleados
+        // Aplicamos los métodos actualizarSalario() sobre distintos empleados
         System.out.println("- Mejoras salariales en los empleados -\n");
         // Aumentar el salario de emp1 en un 10%
         System.out.println("Le sumamos 10% al salario de " + emp1.getNombre());
         emp1.actualizarSalario(10.0);
         System.out.println("\nAhora su salario es: " + emp1.getSalario());
 
-        // Aumentar el salario de emp2 en una cantidad fija de 2000
+        // Aumentamos el salario de emp2 en una cantidad fija de 2000
         System.out.println("\nLe sumamos 2000 al salario de " + emp2.getNombre());
         emp2.actualizarSalario(2000.0, true);
         System.out.println("\nAhora su salario es: " + emp2.getSalario());
         
-        // Aumentar el salario de emp3 en un 15%
+        // Aumentamos el salario de emp3 en un 15%
         System.out.println("\nLe sumamos 15% al salario de " + emp3.getNombre());
         emp3.actualizarSalario(15.0);
         System.out.println("\nAhora su salario es: " + emp3.getSalario());
 
-        // Imprimir la información de cada empleado con toString()
+        // Imprimimos la información de cada empleado con toString()
         
         System.out.println("\nInformación final de los empleados:");
         System.out.println(emp1);
         System.out.println(emp2);
         System.out.println(emp3);
 
-        // Mostrar el total de empleados creados con mostrarTotalEmpleados()
+        // Mostramos el total de empleados creados con mostrarTotalEmpleados()
 
         System.out.println("\nTotal de empleados creados: " + Empleados.mostrarTotalEmpleados());
     }
