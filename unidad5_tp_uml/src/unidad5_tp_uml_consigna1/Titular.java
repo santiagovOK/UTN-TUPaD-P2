@@ -10,27 +10,23 @@ package unidad5_tp_uml_consigna1;
  * <santiago.varela@tupad.utn.edu.ar>
  */
 public class Titular {
-
+    
     // Construimos el estado interno o "private" de Titular
     
     private String nombre; // Variable para nombre completo del titular
-    private String dni;    // Variable para DNI
+    private String dni; // Variable para DNI
     
-    // Composición
-    // Asociación 1‑1 con Foto (cada titular tiene exactamente una foto)
-    
-    private Foto foto;
+    // Creamos la asociación bidireccional con Pasaporte
+    private Pasaporte pasaporte;
 
-    // - Constructor -
+    // - Constructor - 
     
-    // Creamos un titular indicando su nombre y DNI.
-     
     public Titular(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
     }
 
-    // - Getters -
+    // Getters
     public String getNombre() {
         return nombre;
     }
@@ -39,16 +35,35 @@ public class Titular {
         return dni;
     }
 
-    // -------------------- Métodos de asociación --------------------
-    
-    // Obtenemos la foto asociada al titular
-    public Foto getFoto() {
-        return foto;
+    // Métodos de asociación bidireccional con Pasaporte
+    public Pasaporte getPasaporte() {
+        return pasaporte;
     }
-
-    // Setter - Asociamos una foto al titular
-     
-    public void setFoto(Foto foto) {
-        this.foto = foto;
+    
+    public void setPasaporte(Pasaporte pasaporte) {
+        this.pasaporte = pasaporte;
+        // Creamos una validacion para asegurar bidireccionalidad
+        if (pasaporte != null && pasaporte.getTitular() != this) {
+            pasaporte.setTitular(this);
+        }
+    }
+    
+    // Método de comportamiento (Tell, don't ask)
+    // Delegamos la responsabilidad al pasaporte sin exponer la navegación
+    public void mostrarInformacionCompleta() {
+        System.out.println("Titular: " + nombre + " - DNI: " + dni);
+        if (pasaporte != null) {
+            pasaporte.mostrarInformacionFoto();
+            System.out.println("Pasaporte asociado: " + pasaporte.getNumero());
+        } else {
+            System.out.println("Sin pasaporte asociado");
+        }
+    }
+    
+    // Método específico para obtener info de foto (Tell, don't ask)
+    // Evitamos exponer la cadena de navegación
+    
+    public String obtenerInfoFoto() {
+        return pasaporte != null ? pasaporte.obtenerInfoFoto() : "Sin foto disponible";
     }
 }
