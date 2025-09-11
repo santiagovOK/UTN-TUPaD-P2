@@ -12,6 +12,8 @@ package unidad5_tp_uml_consigna1;
 public class Consigna1Main {
     
     public static void main(String[] args) {
+        
+        System.out.println("- SISTEMA PASAPORTE - FOTO - TITULAR -\n");
         // Creamos el pasaporte con foto incluida (composición)
         Pasaporte pasaporte = new Pasaporte("P1234567", "2025-09-11", 
                                            "foto_pasaporte.jpg", "jpg");
