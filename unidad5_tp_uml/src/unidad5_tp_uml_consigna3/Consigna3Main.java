@@ -30,5 +30,22 @@ public class Consigna3Main {
         autor.mostrarInformacion();
         System.out.println();
         editorial.mostrarInformacion();
+        
+        // Verificamos que las relaciones se hayan establecido correctamente
+        System.out.println("\n- Verificación de Relaciones -");
+
+        // Verificación de la relación con Autor
+        if (libro.getAutor() != null) {
+            System.out.println("Libro tiene autor?: Sí");
+        } else {
+            System.out.println("Libro tiene autor?: No");
+        }
+
+        // Verificación de la relación con Editorial
+        if (libro.getEditorial() != null) {
+            System.out.println("Libro tiene editorial?: Sí");
+        } else {
+            System.out.println("Libro tiene editorial?: No");
+        }        
     }
 }
