@@ -125,16 +125,4 @@ public class Celular {
             System.out.println("Sin propietario asignado");
         }
     }
-    
-    // Método para verificar si el celular está completamente configurado
-    public boolean estaCompleto() {
-        return bateria != null && usuario != null && 
-               !imei.isEmpty() && !marca.isEmpty() && !modelo.isEmpty();
-    }
-    
-    // Método para obtener capacidad de batería sin exponer navegación
-    public int obtenerCapacidadBateria() {
-        return (bateria != null) ? bateria.getCapacidad() : 0;
-    }
-    
 }

@@ -10,8 +10,25 @@ package unidad5_tp_uml_consigna3;
  * <santiago.varela@tupad.utn.edu.ar>
  */
 public class Consigna3Main {
-    
     public static void main(String[] args) {
         
+        // Creamos las instancias de Autor, Editorial y Libro
+        Autor autor = new Autor("Gabriel García Márquez", "Colombiano");
+        Editorial editorial = new Editorial("Editorial Sudamericana", "Calle 123, Bogotá");
+        Libro libro = new Libro("Cien años de soledad", "978-0307474728");
+
+        // Establecemos las relaciones entre las clases
+        libro.setAutor(autor);
+        libro.setEditorial(editorial);
+
+        // Mostramos la información del libro usando el principio Tell Don't Ask
+        System.out.println("- Información del Libro -");
+        libro.mostrarInformacion();
+
+        // Mostramos información individual de autor y editorial
+        System.out.println("\n- Información Individual -");
+        autor.mostrarInformacion();
+        System.out.println();
+        editorial.mostrarInformacion();
     }
 }

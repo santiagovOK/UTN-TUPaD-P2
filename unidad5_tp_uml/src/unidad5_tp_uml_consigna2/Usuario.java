@@ -53,15 +53,15 @@ public class Usuario {
     // Setter que mantiene la bidireccionalidad automáticamente
     // Implementamos el principio de consistencia en relaciones bidireccionales
     public void setCelular(Celular celular) {
-        // Desconectar del celular anterior si existe
+        // Desconectamos el celular anterior si existe
         if (this.celular != null && this.celular.getUsuario() == this) {
             this.celular.setUsuario(null);
         }
         
-        // Establecer nueva conexión
+        // Establecemos nueva conexión
         this.celular = celular;
         
-        // Mantener consistencia bidireccional
+        // Mantenemos consistencia bidireccional
         if (celular != null && celular.getUsuario() != this) {
             celular.setUsuario(this);
         }
@@ -78,10 +78,4 @@ public class Usuario {
             System.out.println("Sin celular asignado");
         }
     }
-    
-    // Método para verificar si tiene celular asignado
-    public boolean tieneCelular() {
-        return celular != null;
-    }
-
 }

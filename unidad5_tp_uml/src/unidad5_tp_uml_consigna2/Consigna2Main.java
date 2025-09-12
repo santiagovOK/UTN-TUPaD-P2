@@ -14,23 +14,23 @@ public class Consigna2Main {
     public static void main(String[] args) {
         System.out.println("- SISTEMA CELULAR-BATERÍA-USUARIO -\n");
         
-        // Crear batería independiente (para agregación)
+        // Creamos batería independiente (para agregación)
         Bateria bateria = new Bateria("Samsung Li-Ion", 4000);
         
-        // Crear usuario
+        // Creamos el usuario
         Usuario santiago = new Usuario("Santiago Varela", "12345678");
         
-        // Crear celular con agregación y asociación bidireccional
+        // Creamos el celular con agregación y asociación bidireccional
         Celular celular = new Celular("123456789012345", "Samsung", "Galaxy S23", bateria, santiago);
         
-        // Demostrar comportamiento encapsulado (Tell, Don't Ask)
+        // Demostramos comportamiento encapsulado (Tell, Don't Ask)
         System.out.println("\nInformación completa del usuario:");
         santiago.mostrarInformacionCompleta();
         
         System.out.println("\nInformación completa del celular:");
         celular.mostrarInformacionCompleta();
         
-        // Demostrar cambio de batería (la agregación permite el intercambio)
+        // Demostramos el cambio de batería (la agregación permite el intercambio)
         Bateria nuevaBateria = new Bateria("Apple Li-Po", 3500);
         celular.setBateria(nuevaBateria);
         
