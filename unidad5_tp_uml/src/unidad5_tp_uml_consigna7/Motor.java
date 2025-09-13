@@ -13,7 +13,7 @@ public class Motor {
 
     // Atributos privados de Motor
 
-    private String tipo; // Tipo de motor ("gas", "diésel", etc.)
+    private String tipo; // Tipo de motor ("gas", "diésel", etc)
     private String numeroSerie;  // Número de serie único del motor
 
     // Constructor que inicializa los atributos del motor
