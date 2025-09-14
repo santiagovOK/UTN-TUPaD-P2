@@ -13,11 +13,11 @@ package unidad5_tp_uml_consigna5;
 public class Propietario {
     // Atributos privados para Propietario
     private String nombre; // Nombre del propietario
-    private final String dni; // Número de identificación del propietario
+    private final int dni; // Número de identificación del propietario
     private Computadora computadora; // Computadora del propietario (bidireccional)
 
     // Constructor que inicializa los atributos nombre y dni
-    public Propietario(String nombre, String dni) {
+    public Propietario(String nombre, int dni) {
         this.nombre = nombre;
         this.dni = dni;
     }
@@ -33,7 +33,7 @@ public class Propietario {
     }
 
     // Getter para obtener el número de identificación del propietario
-    public String getDni() {
+    public int getDni() {
         return dni;
     }
 

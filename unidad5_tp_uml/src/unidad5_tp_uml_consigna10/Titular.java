@@ -13,12 +13,12 @@ public class Titular {
 
     // Atributos privados de Titular
     private String nombre; // Nombre del titular
-    private String dni; // Documento Nacional de Identidad del titular
+    private int dni; // Documento Nacional de Identidad del titular
     private CuentaBancaria cuentaBancaria; // Referencia a la cuenta bancaria asociada (Asociación)
 
     // Constructor de la clase Titular
     // Crea un nuevo titular con el nombre y DNI proporcionados
-    public Titular(String nombre, String dni) {
+    public Titular(String nombre, int dni) {
         this.nombre = nombre; // Asigna el nombre proporcionado
         this.dni = dni; // Asigna el DNI proporcionado
         this.cuentaBancaria = null; // Inicialmente no tiene cuenta bancaria asociada
@@ -30,7 +30,7 @@ public class Titular {
     }
 
     // Getter para obtener el DNI del titular
-    public String getDni() {
+    public int getDni() {
         return dni; // Retorna el DNI
     }
 

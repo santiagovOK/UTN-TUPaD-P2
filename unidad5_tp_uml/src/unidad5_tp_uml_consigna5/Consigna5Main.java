@@ -17,7 +17,7 @@ public class Consigna5Main {
         Computadora computadora = new Computadora("Gigabyte", "123456789", "Gigabyte Gaming 3 x370", "Ryzen 2600");
 
         // Creamos una instancia de Propietario con nombre y DNI específicos
-        Propietario propietario = new Propietario("Santiago Varela", "12345678");
+        Propietario propietario = new Propietario("Santiago Varela", 12345678);
 
         // Establecemos la relación de asociación bidireccional entre Computadora y Propietario
         computadora.setPropietario(propietario);

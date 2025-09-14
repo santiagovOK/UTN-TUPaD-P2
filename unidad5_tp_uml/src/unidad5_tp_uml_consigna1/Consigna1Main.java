@@ -29,7 +29,7 @@ public class Consigna1Main {
         // Si necesitamos información específica, usamos métodos de comportamiento
         System.out.println("Info de foto: " + titular.obtenerInfoFoto());
         
-        // Verificamos bidireccionalidad también de forma elegante
+        // Verificamos bidireccionalidad
         System.out.println("\nVerificación bidireccional (desde Pasaporte):");
         pasaporte.getTitular().mostrarInformacionCompleta();
     }

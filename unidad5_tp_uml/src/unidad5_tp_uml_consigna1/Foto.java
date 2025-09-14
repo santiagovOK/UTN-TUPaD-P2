@@ -14,8 +14,6 @@ public class Foto {
 
     private String imagen; // Variable para ruta o nombre del archivo de la foto
     private String formato; // Variable para extensión del archivo (ej. "jpg", "png")
-
-    // - Constructor - 
     
     // Constructor de Foto, que se crea como parte de un pasaporte (composición)
     public Foto(String imagen, String formato) {
@@ -33,6 +31,7 @@ public class Foto {
     }
 
     // Setters
+    
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }

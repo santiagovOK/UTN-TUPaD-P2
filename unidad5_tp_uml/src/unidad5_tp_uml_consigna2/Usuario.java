@@ -13,13 +13,13 @@ public class Usuario {
     // Construimos el estado interno o "private" de Bateria
     
     private String nombre;
-    private String dni;
+    private int dni;
     
     // Referencia para la asociación bidireccional con Celular
     private Celular celular;
     
     // Constructor
-    public Usuario(String nombre, String dni) {
+    public Usuario(String nombre, int dni) {
         this.nombre = nombre;
         this.dni = dni;
     }
@@ -30,7 +30,7 @@ public class Usuario {
     }
     
     // Getter para acceder al DNI
-    public String getDni() {
+    public int getDni() {
         return dni;
     }
     
@@ -46,7 +46,7 @@ public class Usuario {
     }
     
     // Setter para modificar el DNI
-    public void setDni(String dni) {
+    public void setDni(int dni) {
         this.dni = dni;
     }
     

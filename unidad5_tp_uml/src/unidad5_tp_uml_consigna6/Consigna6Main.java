@@ -13,7 +13,7 @@ public class Consigna6Main {
     
     public static void main(String[] args) {
         // Creamos un nuevo cliente
-        Cliente cliente = new Cliente("Juan Pérez", "123456789");
+        Cliente cliente = new Cliente("Juan Pérez", 123456789);
 
         // Creamos una nueva mesa(número, capacidad)
         Mesa mesa = new Mesa(1, 4);
@@ -27,7 +27,7 @@ public class Consigna6Main {
         reserva.mostrarInformacion();
 
         // Actualizamos el teléfono del cliente
-        cliente.setTelefono("987654321");
+        cliente.setTelefono(987654321);
 
         // Mostramos la información actualizada del cliente
         System.out.println("\nInformación actualizada del cliente:");

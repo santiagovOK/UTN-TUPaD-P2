@@ -62,8 +62,11 @@ public class Titular {
     
     // Método específico para obtener info de foto (Tell, don't ask)
     // Evitamos exponer la cadena de navegación
-    
     public String obtenerInfoFoto() {
-        return pasaporte != null ? pasaporte.obtenerInfoFoto() : "Sin foto disponible";
+        if (pasaporte != null) {
+            return pasaporte.obtenerInfoFoto();
+        } else {
+            return "Sin foto disponible";
+        }
     }
 }

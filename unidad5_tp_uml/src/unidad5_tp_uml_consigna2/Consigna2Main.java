@@ -18,7 +18,7 @@ public class Consigna2Main {
         Bateria bateria = new Bateria("Samsung Li-Ion", 4000);
         
         // Creamos el usuario
-        Usuario santiago = new Usuario("Santiago Varela", "12345678");
+        Usuario santiago = new Usuario("Santiago Varela", 12345678);
         
         // Creamos el celular con agregación y asociación bidireccional
         Celular celular = new Celular("123456789012345", "Samsung", "Galaxy S23", bateria, santiago);
@@ -31,7 +31,7 @@ public class Consigna2Main {
         celular.mostrarInformacionCompleta();
         
         // Demostramos el cambio de batería (la agregación permite el intercambio)
-        Bateria nuevaBateria = new Bateria("Apple Li-Po", 3500);
+        Bateria nuevaBateria = new Bateria("Apple Li-Ion", 3500);
         celular.setBateria(nuevaBateria);
         
         System.out.println("\nDespués de cambiar batería:");

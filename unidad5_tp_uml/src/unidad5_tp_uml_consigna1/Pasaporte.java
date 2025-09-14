@@ -50,7 +50,7 @@ public class Pasaporte {
 
     public void setTitular(Titular titular) {
         this.titular = titular;
-        // Asegurar bidireccionalidad
+        // Aseguramos bidireccionalidad
         if (titular != null && titular.getPasaporte() != this) {
             titular.setPasaporte(this);
         }
@@ -65,9 +65,13 @@ public class Pasaporte {
         }
     }
     
-    // Método para obtener info de foto como String (Tell, don't ask
+    // Método para obtener info de foto como String (Tell, don't ask)
     public String obtenerInfoFoto() {
-        return foto != null ? foto.getImagen() + " (" + foto.getFormato() + ")" : "Sin foto";
+        if (foto != null) {
+            return foto.getImagen() + " (" + foto.getFormato() + ")";
+        } else {
+            return "Sin foto";
+        }
     }
 }
 

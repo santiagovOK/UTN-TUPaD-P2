@@ -14,7 +14,7 @@ public class Consigna10Main {
     public static void main(String[] args) {
 
         // Creamos un nuevo titular
-        Titular titular = new Titular("Santiago Varela", "12345678");
+        Titular titular = new Titular("Santiago Varela", 12345678);
 
         // Creamos una nueva cuenta bancaria con CBU, saldo inicial y código de clave de seguridad
         CuentaBancaria cuenta = new CuentaBancaria("1234567890123456789012", 1000.0, "1234");

@@ -35,7 +35,7 @@ public class Celular {
         }
     }
     
-    // Getters especificados en el diagrama UML
+    // Getters
     public String getMarca() {
         return marca;
     }

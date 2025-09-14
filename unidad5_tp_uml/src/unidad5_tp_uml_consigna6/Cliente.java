@@ -14,10 +14,10 @@ public class Cliente {
 
     // Atributos privados de Cliente
     private String nombre;      // Nombre completo del cliente
-    private String telefono;   // Número de teléfono de contacto
+    private int telefono;   // Número de teléfono de contacto
 
     // Constructor que inicializa un nuevo cliente con nombre y teléfono
-    public Cliente(String nombre, String telefono) {
+    public Cliente(String nombre, int telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
     }
@@ -28,12 +28,12 @@ public class Cliente {
     }
 
     // Getter  para obtener el teléfono del cliente
-    public String getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
     // Setter para actualizar el teléfono del cliente
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
 
