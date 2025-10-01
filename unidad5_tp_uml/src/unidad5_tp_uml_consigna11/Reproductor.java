@@ -13,7 +13,6 @@ public class Reproductor {
 
     // Método de comportamiento para reproducir una canción (Tell, Don't Ask)
     // Recibe un objeto de tipo Canción como parámetro y no devuelve ningún valor
-
     public void reproducir(Cancion cancion) {
         // Estructura condicional para verifica que la canción no sea nula
         if (cancion != null) {
