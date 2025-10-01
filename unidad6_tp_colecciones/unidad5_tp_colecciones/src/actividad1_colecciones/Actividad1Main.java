@@ -1,5 +1,11 @@
 package actividad1_colecciones;
 
+/**
+ *
+ * @author Santiago Octavio Varela / @santiagovOK (GitHub)
+ * <santiago.varela@tupad.utn.edu.ar>
+ */
+
 import java.util.ArrayList;
 
 public class Actividad1Main {

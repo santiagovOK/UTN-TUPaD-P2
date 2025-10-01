@@ -1,5 +1,11 @@
 package actividad1_colecciones;
 
+/**
+ *
+ * @author Santiago Octavio Varela / @santiagovOK (GitHub)
+ * <santiago.varela@tupad.utn.edu.ar>
+ */
+
 // Clase que representa un producto en el inventario.
 
 public class Producto {
