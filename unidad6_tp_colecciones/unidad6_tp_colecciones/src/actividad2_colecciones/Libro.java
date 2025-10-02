@@ -13,8 +13,8 @@ public class Libro {
     private int anioPublicacion; // Año de publicación
     private Autor autor; // Autor del libro
 
-    // Constructor de la clase Libro
-    public Libro(String isbn, String titulo, int anioPublicacion, Autor autor) {
+    // Constructor package-private para forzar creación solo desde Biblioteca
+    Libro(String isbn, String titulo, int anioPublicacion, Autor autor) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.anioPublicacion = anioPublicacion;
@@ -22,7 +22,6 @@ public class Libro {
     }
 
     // Método solicitado en la consigna
-
     public void mostrarInfo() {
         System.out.println("Título: " + titulo);
         System.out.println("ISBN: " + isbn);

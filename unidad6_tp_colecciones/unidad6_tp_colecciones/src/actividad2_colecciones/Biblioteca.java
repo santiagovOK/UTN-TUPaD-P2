@@ -9,6 +9,10 @@ package actividad2_colecciones;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Biblioteca {
     // Atributos privados de Biblioteca
     private String nombre; // Nombre de la biblioteca
@@ -50,6 +54,7 @@ public class Biblioteca {
         Libro libroAEliminar = buscarLibroPorIsbn(isbn);
         if (libroAEliminar != null) {
             libros.remove(libroAEliminar);
+            // El libro ya no existe al ser removido de la colección (composición)
         }
     }
 
@@ -83,12 +88,12 @@ public class Biblioteca {
     }
 
     public List<Libro> getLibros() {
-        return libros;
+        // Retornamos copia inmutable para proteger la colección interna
+        return Collections.unmodifiableList(libros);
     }
 
     // Setter para nombre de Biblioteca
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
 }
