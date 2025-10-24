@@ -1,6 +1,6 @@
 package division_segura;
 
-/**
+/*
  *
  * @author Santiago Octavio Varela / @santiagovOK (GitHub)
  * <santiago.varela@tupad.utn.edu.ar>

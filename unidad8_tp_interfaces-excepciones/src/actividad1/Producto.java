@@ -1,6 +1,6 @@
 package actividad1;
 
-/**
+/*
  *
  * @author Santiago Octavio Varela / @santiagovOK (GitHub)
  * <santiago.varela@tupad.utn.edu.ar>
