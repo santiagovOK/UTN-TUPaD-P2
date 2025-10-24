@@ -39,7 +39,4 @@ public class Producto implements Pagable {
         return nombre;
     }
 
-    public double getPrecio() {
-        return precio;
-    }
 }
